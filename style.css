@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.row {
+    padding: 10px;
+}
+
+.right-panel {
+    height: 96.5vh;
+    border-radius: 0 15px 15px 0;
+}
+
+.left-panel {
+    height: 96.5vh;
+    border-radius: 15px 0 0 15px;
+}
+
+.rotate {
+    animation: rotation 3s infinite linear;
+    color: #ffffff;
+}
+
+.block a {
+    padding-bottom: 10px !important;
+}
+
+.block a:hover {
+    text-decoration: none;
+    color: #fff;
+    /*background-color: #0b2e13;*/
+}
+
+.profile {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #cefaed;
+    margin-top: 15px;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.col-sm-3 {
+    width: 34.33% !important;
+}
+
+.hr {
+    background-color: #fff !important;
+    margin-bottom: 5px;
+}
+
+.fa-store {
+    font-size: 50px;
+    color: rgba(56, 23, 2, 0.71);
+}
+
+.fa-person {
+    font-size: 50px;
+    color: rgba(3, 40, 47, 0.73);
+}
+
+.fa-truck-fast {
+    font-size: 50px;
+    color: rgba(1, 14, 14, 0.68);
+}
+
+@media (max-width: 576px) {
+    .block {
+        display: flex !important;
+    }
+
+    .left-panel {
+        height: fit-content;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .right-panel {
+        border-radius: 0 0 15px 15px;
+    }
+.profile{
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+.statistics{
+    overflow-x: hidden;
+    height:60vh;
+}
+}
+.description{
+    text-align: left;
+}
